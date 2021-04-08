@@ -1,1 +1,68 @@
+html {
+    background-color: black;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 
+#pageContainer {
+    display:grid;
+    grid-template-rows: 1fr 6fr 1fr/ 1fr;
+    grid-template-areas:    'header'
+                            'main'
+                            'footer'; 
+}
+
+header {
+    grid-area: header;
+}
+
+main {
+    grid-area: main;
+}
+
+main {
+    display: grid;
+    grid-template-rows: 3fr 3fr;
+    grid-template-areas:    'cellphone'
+                            'landscape';
+    max-height: 1700px;
+}
+
+#cellphone {
+    grid-area: cellphone;
+}
+
+#landscape {
+    grid-area: landscape;
+}
+
+header h1 {
+    font-size: 50px;
+    color: white;
+}
+
+a {
+    font-size: 16px;
+    color: aquamarine;
+}
+
+h2 {
+    font-size: 42px;
+    font-weight: 300;
+    color:white;
+}
+
+h3 {
+    font-size: 21px;
+    color: gray;
+}
+
+footer {
+    text-align: right;
+    color:gray;
+    grid-area: footer;
+}
+
+img {
+    margin-top:  20px;
+}
